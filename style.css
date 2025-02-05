@@ -1,0 +1,106 @@
+/*pantalla inicio*/
+.pantalla-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la ventana */
+    background-color: #3498db; /* Azul claro */
+    color: white;
+    margin: 0; /* Elimina márgenes que podrían desplazar el contenido */
+    overflow: hidden; /* Evita cualquier scroll en la pantalla de inicio */
+}
+
+.pantalla-inicio h1 {
+    font-size: 2.5em;
+}
+
+.pantalla-inicio button {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #3498db;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pantalla-inicio button:hover {
+    background-color: #2980b9; /* Azul más oscuro */
+    color: white;
+}
+#pantalla-juego {
+    display: none; /* Oculta el juego inicialmente */
+}
+
+/*estilos para el juego*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/*boton reiniciar*/
+#resetButton {
+    display: block; /* Asegura que el botón esté en su propia línea */
+    margin: 20px auto; /* 🔹 Centra horizontalmente */
+    padding: 10px 20px; /* 🔹 Ajusta el tamaño */
+    font-size: 18px; /* 🔹 Hace el texto más visible */
+    background-color: #007bff; /* 🔹 Color azul */
+    color: white; /* 🔹 Texto en blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Asegura que el texto esté alineado */
+}
+
+#resetButton:hover {
+    background-color: #0056b3; /* 🔹 Azul más oscuro al pasar el mouse */
+}
