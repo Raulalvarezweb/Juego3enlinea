@@ -1,4 +1,4 @@
-// Pantallas principales
+// variables de la pantalla de inicio
 const pantallaInicio = document.getElementById("pantalla-inicio");
 const pantallaJuego = document.getElementById("pantalla-juego");
 const comenzarJuegoBtn = document.getElementById("comenzar-juego");
